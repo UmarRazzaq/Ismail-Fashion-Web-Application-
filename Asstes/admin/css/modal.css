@@ -1,0 +1,244 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 100px;
+    top: 0;
+    left: 245px;
+    width: calc(100% - 245px);
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.m-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: var(--main-color);
+    float: right;
+    font-size: 38px;
+    margin-top: -10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.m-header {
+    padding: 10px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    color: var(--main-color);
+}
+
+.m-body {
+    padding: 30px 16px;
+    margin: 0 50px;
+}
+
+.m-footer {
+    padding: 10px 16px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.cat-btn1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cat-btn1 button{
+    color: #ffffff;
+    padding: 8px 10px;
+    border: 1px solid #d4d3d3;
+    outline: none;
+    border-radius: 3px;
+}
+
+.cat-btn1 button.c5{
+    color: var(--main-color);
+    background-color: #f0f0f0;
+}
+
+.cat-from{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.pro-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pro-form .cat-input,
+.cat-from .cat-input{
+    padding: 5px;
+    width: 250px;
+    height: 30px;
+}
+
+.pro-form label{
+    text-align: left;
+}
+
+.pro-form .desc{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px){
+    .modal{
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+    .m-body {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .modal{
+        left: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 572px){
+    .m-content{
+        margin: auto 0;
+        left: 50px;
+    }
+    .cat-from{
+        display: block;
+    }
+    .pro-form .cat-input,
+    .cat-from .cat-input{
+        padding: 5px;
+        width: 100px;
+        height: 30px;
+    }
+}
+
+.de-text{
+    text-align: center;
+
+}
+
+.de-modal .cat-btn1 button{
+    color: #ffffff;
+    padding: 10px 40px;
+    border: 1px solid #d4d3d3;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.de-text h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.de-modal .cat-btn1 button.c5{
+    color: var(--main-color);
+    background-color: #f0f0f0;
+}
+
+/*Tooltip design*/
+
+.tip {
+    position: relative;
+    display: inline-block;
+}
+
+.tip .tip_text {
+    visibility: hidden;
+    min-width: 50px;
+    max-width: 300px;
+    width: max-content;
+    width: -moz-max-content;
+    background-color: rgba(59, 72, 80, 0.9);
+    background-image: linear-gradient(30deg,
+    rgba(59, 72, 80, 0.44),
+    rgba(59, 68, 75, 0.44),
+    rgba(60, 82, 88, 0.44));
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    white-space: pre-wrap;
+    transform: translate(-50%, -35px) scale(1);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 18px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    transition: 0.2s;
+    will-change: transform;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+    letter-spacing: 2px;
+}
+
+.tip .tip_text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+    transition-duration: 0s;
+    transform-origin: top;
+    transform: translateX(-50%) scaleY(50%);
+}
+
+.tip:hover .tip_text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.form-group div{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form-group .sel{
+    padding: 5px;
+    width: 250px;
+    height: 30px;
+}
+
+.p-add .m-content{
+    margin-top: -80px;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
