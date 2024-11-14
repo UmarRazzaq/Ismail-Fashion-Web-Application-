@@ -1,0 +1,172 @@
+.slider{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.slide-img{
+    height: 500px;
+    display: none;
+    overflow: hidden;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: var(--black);
+    transition: .1s;
+    user-select: none;
+    font-family: dosis-light;
+}
+
+.prev:hover, .next:hover{
+    color: var(--theme);
+}
+
+.next{
+    right: 0;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from{
+        opacity: 0.8;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from{
+        opacity: 0.8;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.img-info{
+    position: absolute;
+    color: var(--smoke);
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40%;
+    left: 15%;
+    z-index: 1;
+    animation-name: posi;
+    animation-duration: 2s;
+    -webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes posi {
+    from{
+        left: 25%;
+    }
+    to{
+        left: 15%;
+    }
+}
+
+@keyframes posi {
+    from{
+        left: 25%;
+    }
+    to{
+        left: 15%;
+    }
+}
+
+.img-info h1{
+    color: var(--theme);
+    font-family: dosis-bold;
+    margin-bottom: 20px;
+}
+
+.img-info p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.slide-img a img{
+    transform: scale(1.5, 1.5);
+    animation-name: zoomin;
+    animation-duration: 40s;
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+}
+
+@-webkit-keyframes zoomin {
+    from{
+        transform: scale(1, 1);
+    }
+    to{
+        transform: scale(1.5, 1.5);
+    }
+}
+
+@keyframes zoomin {
+    from{
+        transform: scale(1, 1);
+    }
+    to{
+        transform: scale(1.5, 1.5);
+    }
+}
+
+@media screen and(max-width: 800px){
+    .slide-img{
+        height: 500px;
+    }
+    .img-info{
+        line-height: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation-name: posi2;
+        animation-duration: 2s;
+        -webkit-animation-name: posi2;
+        -webkit-animation-duration: 2s;
+    }
+    @-webkit-keyframes posi2 {
+        from{
+            top: 35%;
+        }
+        to{
+            top: 50%;
+        }
+    }
+
+    @keyframes posi2 {
+        from{
+            top: 35%;
+        }
+        to{
+            top: 50%;
+        }
+    }
+    .img-info h1{
+        font-size: 40px;
+    }
+    .img-info p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .img-info h1{
+        font-size: 30px;
+    }
+
+}

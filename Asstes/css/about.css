@@ -1,0 +1,221 @@
+@media only screen and (max-width: 767px){
+    .static-main-container {
+        padding: 20px 0 60px;
+    }
+    .static-main-container .static-navigation {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        padding: 0;
+    }
+    .static-main-container .static-navigation ul {
+        display: block;
+    }
+    .static-main-container .static-navigation li{
+        width: 100%;
+        display: block;
+        padding: 16px 10px 17px;
+    }
+    .static-main-container .static-navigation li+li {
+        border: none;
+        border-top: 1px solid rgba(0,0,0,.1);
+    }
+    .static-main-container .static-container {
+        padding: 9px 20px 0;
+    }
+}
+
+.static-main-container {
+    padding: 30px 30px 96px;
+}
+
+.static-main-container .static-navigation {
+    font-size: 0;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 16px 0 17px;
+}
+
+.static-main-container .static-navigation ul {
+    display: flex;
+}
+
+.static-main-container .static-navigation li {
+    font-size: 12px;
+    line-height: 30px;
+    color: #000;
+    list-style: none;
+    padding: 0 10px;
+    font-family: dosis-medium;
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+.static-main-container .static-navigation li+li {
+    border-left: 1px solid rgba(0,0,0,.1);
+}
+
+.static-main-container .static-navigation li a {
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.static-main-container .static-navigation li a:hover,
+.static-main-container .static-navigation li.active a {
+    color: var(--theme);
+    transition: all .5s ease-in-out;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.static-main-container .static-navigation li.active a,
+.cms-shipping-and-delivery .static-main-container .static-navigation li.shipping a,
+.cms-policy .static-main-container .static-navigation li.policy a,
+.contacts-index-index .static-main-container .static-navigation li.contact a,
+.cms-about-ismail .static-main-container .static-navigation li.about-ismail a,
+.cms-faqs .static-main-container .static-navigation li.faq a,
+.cms-company .static-main-container .static-navigation li.company a,
+.cms-returns-and-exchange .static-main-container .static-navigation li.returns-and-exchange a {
+    color: var(--theme);
+    transition: all .5s ease-in-out;
+}
+
+.static-main-container .static-container {
+    padding: 47px 20px 0;
+}
+
+.static-main-container .static-container .static-content {
+    width: 1108px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.static-main-container .static-container .policy-container {
+    padding: 0 0 18px;
+}
+
+.static-main-container .static-container h2 {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    text-transform: none;
+    letter-spacing: .1em;
+    margin: 0 0 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.static-main-container .static-container p, .static-main-container .static-container li {
+    font-size: 14px;
+    line-height: 25px;
+    color: #606060;
+    letter-spacing: .1em;
+    margin: 0 0 18px;
+}
+
+.std p {
+    margin: 0 0 1.5em;
+}
+
+.static-main-container .static-container .lower_roman li {
+    list-style: inside none lower-roman;
+    margin-left: 16px;
+}
+
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0 !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+.static-main-container .static-container .policy-container {
+    padding: 0 0 18px;
+}
+
+.static-main-container .static-navigation li.active a::after,
+.cms-shipping-and-delivery .static-main-container .static-navigation li.shipping a::after,
+.cms-policy .static-main-container .static-navigation li.policy a::after,
+.contacts-index-index .static-main-container .static-navigation li.contact a::after,
+.cms-about-ismail .static-main-container .static-navigation li.about-ismail a::after,
+.cms-faqs .static-main-container .static-navigation li.faq a::after,
+.cms-company .static-main-container .static-navigation li.company a::after,
+.cms-returns-and-exchange .static-main-container .static-navigation li.returns-and-exchange a::after {
+    content: "";
+    background: var(--theme);
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    width: 100%;
+    height: 2px;
+    transition: all .5s ease-in-out;
+}
+
+.static-main-container .static-navigation li a:hover,
+.static-main-container .static-navigation #linkwrap li.current a{
+    color: var(--theme);
+}
+
+.static-main-container .static-navigation #linkwrap li.current a::after {
+    content: "";
+    background: var(--theme);
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    width: 100%;
+    height: 2px;
+}
+
+.static-main-container .static-container .static-content {
+    width: 1108px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.static-main-container #accordion2 ul {
+    list-style: none;
+    margin: 0;
+}
+
+.static-main-container #accordion2 li .accordion-head {
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
+    text-transform: none;
+    font-family: dosis-medium;
+    letter-spacing: .05em;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 0 0 21px;
+    padding: 0 0 0 19px;
+}
+
+.static-main-container #accordion2 .accordion-content {
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+.static-main-container .static-container a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.static-main-container .static-container .contact_detail p a {
+    color: #28313b;
+    text-decoration: underline;
+}
+
+.chevron-down{
+    margin-right: 10px
+}

@@ -1,0 +1,181 @@
+@media screen and (min-width: 320px) and (max-width: 1024px){
+    .home-categorytiles-block .tiles-section {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px){
+    .tiles-section.tiles-section-responsive {
+        display: block!important;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    .home-categorytiles-block .tiles-section .tile-container .tile-content {
+        transition: all 200ms ease-in-out;
+        -webkit-transition: all 200ms ease-in-out;
+        -moz-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out;
+        max-height: 40px;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    .home-categorytiles-block .tiles-section .tile-container .tile-content .tile-title {
+        text-align: center;
+        transition: all 200ms ease-in-out;
+        -webkit-transition: all 200ms ease-in-out;
+        -moz-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+    .home-categorytiles-block .tiles-section .tile-container:hover .tile-content .tile-title {
+        margin: 0 0 6px;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    .home-main-wrapper .home-layout-container {
+        padding: 22px 0 0;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .home-main-wrapper .home-categorytiles-block {
+        padding: 0 0 10px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .home-categorytiles-block .tiles-section {
+        margin: 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .home-categorytiles-block .tiles-section .left-section,
+    .home-categorytiles-block .tiles-section .right-section {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .home-categorytiles-block .tiles-section .tile {
+        width: 100%;
+        padding: 0;
+        margin: 0 0 20px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .home-categorytiles-block .tiles-section .tile+.tile {
+        padding: 0;
+    }
+}
+
+.home-main-wrapper .home-layout-container {
+    padding: 30px 20px 0;
+}
+
+.home-main-wrapper .home-layout-container .home-layout {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.home-main-wrapper .home-categorytiles-block {
+    font-size: 0;
+    padding: 0 0 15px;
+    margin-top: 30px;
+}
+
+.home-categorytiles-block .tiles-section {
+    margin: 0 0 30px;
+}
+
+.home-categorytiles-block .tiles-section .left-section {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 15px 0 0;
+}
+
+.home-categorytiles-block .tiles-section .tile-container {
+    position: relative;
+}
+
+.home-categorytiles-block .tiles-section a {
+    display: block;
+}
+
+.home-categorytiles-block .tiles-section a img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.home-categorytiles-block .tiles-section .tile-container .tile-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    padding: 10px 30px 11px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home-categorytiles-block .tiles-section .tile-container .tile-content .tile-title {
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    display: block;
+    font-family: dosis-medium;
+    text-align: center;
+}
+
+.home-categorytiles-block .tiles-section .tile {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px 0 0;
+}
+
+.home-categorytiles-block .tiles-section .tile+.tile {
+    padding: 0 0 0 15px;
+}
+
+.tiles-section.tiles-section-new {
+    margin-top: 27px;
+}
+
+.home-categorytiles-block .tiles-section .right-section {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    padding: 0 0 0 15px;
+}
+
+.home-categorytiles-block .tiles-section .tile-container:hover .tile-content{
+    padding: 30px 50px 31px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.9);
+    width: 100%;
+    overflow: hidden;
+}
+
+.col-wrapper:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+

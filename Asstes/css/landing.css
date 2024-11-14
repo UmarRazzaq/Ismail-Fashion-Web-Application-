@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: dosis-medium;
+    text-decoration: none;
+}
+
+.landing{
+    clear: both;
+    width: 100%;
+}
+
+.landing{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.landing .content{
+    width: 1300px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--theme);
+}
+
+.landing .content a{
+    color: var(--theme);
+}
+
+.landing .content .box{
+    width: 40%;
+    transition: all .3s ease-in-out;
+}
+
+.landing .content .left img{
+    width: 600px;
+    height: 800px;
+}
+
+.landing .content .right .pro-title{
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+.landing .content .right .pro-title h1{
+    margin-bottom: 5px;
+}
+
+.landing .content .right .pro-title h4{
+    margin-bottom: 5px;
+    font-family: dosis-light;
+}
+
+.landing .content .right .pro-title span.price1{
+    margin-bottom: 20px;
+}
+
+.landing .content .right .quantity .qty-field, .cart-item .item .item-detail .quantity .qty-field{
+    display: flex;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.quantity .qty-field{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.quantity .qty-field .qty-control .btn-minus, .quantity .qty-field .qty-control .btn-plus{
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,.25);
+    background: transparent;
+}
+
+.quantity .qty-field .qty-control .btn-minus:hover, .quantity .qty-field .qty-control .btn-plus:hover{
+    border: 1px solid var(--theme);
+}
+
+.quantity .qty-field input.qty{
+    border: none;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    background: none;
+    font-size: 12px;
+    line-height: 28px;
+    height: 30px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    width: 68px;
+    text-align: center;
+    outline: none;
+}
+
+.landing .content .right .pro-quantity .cart-btn .btn-bag{
+    width: 100%;
+    height: 40px;
+    background: var(--theme);
+    color: var(--primary);
+    font-family: dosis-bold;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.landing .content .right .pro-desc label{
+    font-size: 18px;
+    font-family: dosis-light;
+    margin-bottom: 10px;
+}
+
+.cart-item .item{
+    display: flex;
+    margin: 20px;
+}
+
+.cart-item .item .item-detail{
+    margin-left: 20px;
+}
+
+.cart-item .item .product-img img{
+    width: 140px;
+    height: 180px;
+}
+
+.cart-item .item .action{
+    display: flex;
+}
+
+.cart-item .item .action h5{
+    margin-right: 20px;
+}
+
+.item-wrapper{
+    width: 100%;
+}
+
+.cart-wrapper h6{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: dosis-light;
+}
+
+.cart-wrapper hr{
+    margin-left: 20px;
+    border-color: rgba(0,0,0,0.1);
+    width: 65%;
+}
+
+.price-wrapper{
+    margin: 20px;
+    border-top: 2px solid rgba(0,0,0,0.1);
+}
+
+.price-wrapper label{
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: dosis-light;
+}
+
+.price-wrapper .priced{
+    float: right;
+    margin-right: 20px;
+}
+
+.item .item-detail div button.removed{
+    background: white;
+    border: none;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: -5px;
+    cursor: pointer;
+    color: rgba(0,0,0,0.25);
+}
+
+.item .item-detail div button.removed:hover{
+    color: var(--theme);
+}
+
+button.checkout a{
+    text-decoration: none;
+    color: var(--theme);
+    font-family: dosis-bold;
+}
+
+button.checkout{
+    background-color: white;
+    border: 1px solid var(--theme);
+    height: 42px;
+    width: 250px;
+    text-align: center;
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+button.checkout:hover a{
+    color: var(--primary);
+}
+
+button.checkout:hover{
+    border: 1px solid var(--primary);
+    background-color: var(--theme);
+    border-radius: 3px;
+}
+
+/*CallOut Start*/
+
+.callout {
+    border-radius: 3px;
+    margin: 20px;
+    padding: 15px 30px 15px 15px;
+    border-left: 5px solid #eee;
+}
+
+.alert-success, .callout.callout-success{
+    background-color: #00a65a !important;
+    border-color: #00733e;
+}
+
+button.closed{
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.closed{
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--primary);
+    text-shadow: 0 1px 0 #000;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.alert-danger, .callout.callout-danger{
+    background-color: #dd4b39 !important;
+    border-color: #c23321;
+}
+
+.alert-success, .alert-danger, .callout.callout-success, .callout.callout-danger{
+    color: var(--primary);
+}
+
+.alert-success {
+    border-color: #008d4c;
+}
+.alert {
+    border-radius: 3px;
+}
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.alert-dismissable, .alert-dismissible {
+    padding-right: 35px;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert .close_ {
+    color: #000;
+    opacity: .2;
+    filter: alpha(opacity=20);
+}
+.alert-dismissable .close_, .alert-dismissible .close_ {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+}
+button.close_ {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+.close_ {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.alert h4 {
+    font-weight: 600;
+}
+.alert h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+/*CallOut End*/
+
+.cart-msg{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: dosis-light;
+}
+
+.page-header {
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

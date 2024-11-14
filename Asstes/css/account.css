@@ -1,0 +1,544 @@
+@media only screen and (max-width: 767px){
+    .account-login {
+        padding: 0 20px;
+        display: block;
+    }
+    .col2-set .col-1, .col2-set .col-2 {
+        padding: 10px;
+    }
+    .col2-set .buttons-set .button,
+    .col2-set .buttons-set .button2 {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.col2-left-layout .col-main {
+    float: none;
+    width: 100%;
+    padding: 0 15px 30px;
+    margin: 0 auto;
+    max-width: 1400px;
+    font-size: 0;
+}
+
+@media only screen and (max-width: 479px){
+    .col2-set .col-1, .col2-set .col-2 {
+        float: none;
+        width: auto;
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .buttons-set .button {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 7px;
+    }
+    .buttons-set .back-link {
+        display: none;
+    }
+}
+
+
+.col-left, .col-right, .col-main {
+    padding: 0 10px;
+}
+
+.account-login {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.account-login .block {
+    margin: 0;
+    width: 340px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.account-login .block-content {
+    margin: 0;
+    padding: 0 0 90px;
+}
+
+.block-content {
+    margin-top: 5px;
+}
+
+.col2-set {
+    width: 100%;
+}
+
+.col2-set:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.col2-set .col-1 {
+    width: 100%;
+    padding: 20px;
+}
+
+.account-login .block-content .fieldset {
+    margin: 0;
+}
+
+.fieldset {
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.fieldset .form-title {
+    padding: 0 14px 9px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    text-align: left;
+}
+
+.fieldset .form-title .form-block-title {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin: 0;
+    padding: 13px 0 6px;
+}
+
+.fieldset .form-title .form-block-title h2 {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--theme);
+    margin: 0;
+    font-weight: normal;
+    text-transform: none;
+    position: relative;
+    display: block;
+    text-align: left;
+}
+
+.account-login .block-content h2 {
+    font-size: 18px;
+    color: #000;
+    text-transform: none;
+    text-align: center;
+    margin: 9px 0 0;
+    border: none;
+    padding: 0;
+    line-height: normal;
+}
+
+.fieldset .form-title h3 {
+    border: none;
+    font-size: 10px;
+    line-height: 20px;
+    color: rgba(0,0,0,.5);
+    font-family: 'dosis-medium';
+    padding: 4px 0;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: .2em;
+}
+
+.customer-account-login .scaffold-form label:first-child {
+    width: 115px;
+}
+
+.account-login .block-content li label, .form-list li label {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+label.required em, span.required em {
+    display: none;
+}
+
+.account-login .block-content .input-box, .form-list li .input-box {
+    position: relative;
+    padding: 0;
+}
+
+.input-box {
+    padding-top: 2px;
+}
+
+.input-box:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.account-login .block-content .input-box input, .form-list li .input-box input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    font-size: 12px;
+    line-height: 39px;
+    outline: none;
+    color: rgba(0,0,0,.5);
+    font-family: 'dosis-medium';
+    padding: 0 14px;
+    height: 40px;
+    width: 100%;
+    letter-spacing: .05em;
+}
+
+.account-login .block-content li {
+    position: relative;
+}
+
+.form-list li, .form-list li.wide {
+    margin: 0;
+}
+
+.form-list>li {
+    margin-bottom: 20px;
+}
+
+.account-login .block-content .forgot-pass {
+    text-align: left;
+    font-size: 12px;
+    line-height: 22px;
+    color: rgba(0,0,0,.5);
+    letter-spacing: .05em;
+    padding: 8px 14px;
+}
+
+.account-login .block-content .forgot-pass a {
+    color: rgba(0,0,0,.5);
+}
+
+.account-login .block-content .forgot-pass a:hover{
+    color: var(--theme);
+}
+
+.fieldset p {
+    margin-bottom: 7px;
+}
+
+.a-right, .align-right {
+    text-align: right;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.button{
+    background: none;
+    border: 1px solid var(--theme);
+    display: inline-block;
+    padding: 0 10px;
+    color: var(--theme);
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'dosis-medium';
+    line-height: 28px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    outline: none!important;
+    box-shadow: 0 0 0 #fff!important;
+}
+
+.my-account .buttons-set.form-button-set {
+    border: none;
+    padding: 15px 0 0;
+    width: 340px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.my-account .buttons-set {
+    padding: 15px 0 0;
+    margin: 15px 0 0;
+    max-width: 100%;
+}
+
+.hide-pass{
+    display: none;
+}
+
+.show-pass{
+    display: block;
+}
+
+.my-account li.control label {
+    font-size: 12px;
+    color: rgba(0,0,0,.5);
+    line-height: 17px;
+    margin: 0;
+    display: block;
+    padding: 0 0 0 2px;
+    width: 100%;
+    max-width: none;
+    letter-spacing: .05em;
+    cursor: pointer;
+    font-family: dosis-light;
+}
+
+.my-account li.control label:hover{
+    color: var(--theme);
+}
+
+.my-account .fieldset+.fieldset {
+    border-top: none;
+}
+
+.my-account .fieldset {
+    width: 340px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.my-account p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #606060;
+    letter-spacing: .05em;
+}
+
+.fieldset+.fieldset {
+    margin-top: 5px;
+}
+
+.hover:hover{
+    background-color: var(--theme);
+    color: white;
+    transition: all .5s ease-in-out;
+}
+
+.account-login .block-content .buttons-set {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    border: none;
+}
+
+.customer-account-login .col2-set .buttons-set {
+    text-align: left;
+    border-top: 0;
+}
+
+.buttons-set {
+    clear: both;
+    margin: 10px 0 0;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.buttons-set:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.account-login .block-content .buttons-set .button.login-btn {
+    background: var(--theme);
+    color: #fff;
+}
+
+.account-login .block-content .buttons-set .button {
+    width: 100%;
+    margin: 15px 0 0;
+    display: block;
+    min-width: 0;
+}
+
+.customer-account-login .col2-set .buttons-set button,
+.customer-account-login .col2-set .buttons-set .button {
+    float: none;
+    min-width: 50%;
+    margin: 0;
+}
+
+.button+.button {
+    margin-left: 5px;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.form-list>li {
+    margin-bottom: 20px;
+}
+
+.form-list li, .form-list li.wide {
+    margin: 0;
+}
+
+.form-list li.control {
+    padding: 14px;
+    margin: 0;
+}
+
+.form-list .control {
+    margin-top: 10px;
+}
+
+.form-list .field, .form-list .wide, .form-list .control {
+    margin-bottom: 20px;
+}
+
+.account-login .block-content li.control input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 17px;
+    margin: 0;
+    cursor: pointer;
+    opacity: 0;
+    letter-spacing: .1em;
+}
+
+.form-list .control label {
+    color: #636363;
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    display: inline-block;
+    width: auto;
+    max-width: none;
+    min-width: 250px;
+    float: none;
+    padding: 6px 10px 6px 40px;
+}
+
+.fieldset ul.form-list li input[type="text"].input-text:focus,
+.fieldset ul.form-list li input[type="password"].input-text:focus,
+.fieldset ul.form-list li input[type="number"].input-text:focus,
+.fieldset ul.form-list li select.validate-select:focus,
+.fieldset ul.form-list li input[type="tel"].input-text:focus,
+.fieldset ul.form-list li input[type="email"].input-text:focus{
+    background-color: white;
+    box-shadow: 0 1px 2px grey;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0){
+    .form-list li .input-box select {
+        padding-left: 14px;
+    }
+}
+
+.form-list li .input-box select {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    font-size: 12px;
+    line-height: 39px;
+    color: rgba(0,0,0,.5);
+    font-family: dosis-light;
+    padding: 0 10px;
+    height: 40px;
+    width: 100%;
+    letter-spacing: .05em;
+    margin: 0;
+    background-color: transparent;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.form-list select {
+    margin-top: 4px;
+    width: 365px;
+    max-width: 100%;
+}
+
+.fieldset ul.form-list li input[type="text"].input-text::placeholder,
+.fieldset ul.form-list li input[type="password"].input-text::placeholder,
+.fieldset ul.form-list li input[type="number"].input-text::placeholder,
+.fieldset ul.form-list li input[type="tel"].input-text::placeholder,
+.fieldset ul.form-list li input[type="email"].input-text::placeholder{
+    color: var(--theme);
+    font-family: dosis-light;
+}
+
+.account-login .block-content li.control label {
+    font-size: 12px;
+    color: rgba(0,0,0,.5);
+    line-height: 17px;
+    margin: 0;
+    display: block;
+    padding: 0 0 0 25px;
+    width: 100%;
+    max-width: none;
+    letter-spacing: .05em;
+}
+
+.form-list .control label {
+    float: none;
+    color: #636363;
+    background-color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    width: auto;
+    max-width: none;
+    min-width: 250px;
+    padding: 6px 10px 6px 40px;
+}
+
+.account-login .block-content .buttons-set .back-link {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+    color: rgba(0,0,0,.5);
+    line-height: 22px;
+    padding: 6px 0;
+}
+
+.buttons-set .back-link {
+    float: left;
+    margin: 0;
+    line-height: 33px;
+}
+
+.account-login .block-content .buttons-set .back-link a {
+    color: gray;
+}
+
+.account-login .block-content .form-list .field {
+    margin: 0;
+}
+
+.form-list li .field {
+    margin: 0;
+}
+
+.error{
+    color: #ff0000;
+}
